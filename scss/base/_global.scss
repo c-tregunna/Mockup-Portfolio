@@ -1,0 +1,20 @@
+body {
+    background-color: $black;
+    font-size: 1em;
+    color: $grey;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    @include flex($dir: column, $align: center);
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 3px solid $grey;
+}

@@ -1,0 +1,24 @@
+.button-container {
+    @include flex($dir: column, $align: center, $just: space-between);
+    padding: 20px;
+    @include medq($break-m) {
+        @include flex($dir: row, $just: space-around);
+    }
+}
+
+button {
+    background: $orange;
+    color: $white;
+    border: 1px solid $grey;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 1.25em;
+    width: 140px;
+    margin: 8px;
+    transition: color .4s ease-in-out,
+                border .4s ease-in-out;
+    &:hover {
+        color: $black;
+        border: 1px dashed $black;
+    }
+}
