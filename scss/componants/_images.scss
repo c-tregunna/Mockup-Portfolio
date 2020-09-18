@@ -1,0 +1,27 @@
+.mockup-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 6px;
+    @include medq($break-m) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include medqL($break-l) {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+.mockup {
+    border: 1px solid $white;
+    height: 200px;
+}
+
+@each $image, $background in $bg-images {
+    .#{$image} {
+      background: $background;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+}

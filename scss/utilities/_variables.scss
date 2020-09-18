@@ -11,3 +11,14 @@ $break-m: 768px;
 $break-l: 1024px;
 
 $max-width: 1200px;
+
+$bg-images: (
+    'mockup__momentum': url('../images/momentum.png'),
+    'mockup__firebase': url('../images/firebase.png'),
+    'mockup__ios': url('../images/ios.png'),
+    'mockup__cloudflare': url('../images/cloudflare.png'),
+    'mockup__social': url('../images/social.png'),
+    'mockup__petadopt': url('../images/petadopt.png'),
+    'mockup__chatapp': url('../images/chatapp.png'),
+    'mockup__featherlite': url('../images/featherlite.png'),
+);

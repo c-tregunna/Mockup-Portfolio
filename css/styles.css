@@ -414,6 +414,7 @@ body {
   font-size: 1em;
   color: #C0C0C0;
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -435,6 +436,84 @@ header {
 .header-paragraph {
   text-align: center;
   font-size: 2em;
+}
+
+.mockup-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 6px;
+}
+@media (min-width: 768px) {
+  .mockup-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .mockup-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.mockup {
+  border: 1px solid #FFF;
+  height: 200px;
+}
+
+.mockup__momentum {
+  background: url("../images/momentum.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__firebase {
+  background: url("../images/firebase.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__ios {
+  background: url("../images/ios.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__cloudflare {
+  background: url("../images/cloudflare.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__social {
+  background: url("../images/social.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__petadopt {
+  background: url("../images/petadopt.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__chatapp {
+  background: url("../images/chatapp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mockup__featherlite {
+  background: url("../images/featherlite.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-container {
