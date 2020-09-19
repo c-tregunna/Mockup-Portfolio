@@ -14,14 +14,20 @@
 
 .mockup {
     border: 1px solid $white;
-    height: 200px;
+    text-align: center;
+    overflow: auto;
+    // height: 200px;
 }
 
-@each $image, $background in $bg-images {
-    .#{$image} {
-      background: $background;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+.mockup img {
+    width: 100%;
 }
+
+// @each $image, $background in $bg-images {
+//     .#{$image} {
+//       background: $background;
+//       background-size: contain;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//     }
+// }

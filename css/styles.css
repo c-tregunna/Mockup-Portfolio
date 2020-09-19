@@ -457,63 +457,12 @@ header {
 
 .mockup {
   border: 1px solid #FFF;
-  height: 200px;
+  text-align: center;
+  overflow: auto;
 }
 
-.mockup__momentum {
-  background: url("../images/momentum.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__firebase {
-  background: url("../images/firebase.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__ios {
-  background: url("../images/ios.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__cloudflare {
-  background: url("../images/cloudflare.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__social {
-  background: url("../images/social.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__petadopt {
-  background: url("../images/petadopt.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__chatapp {
-  background: url("../images/chatapp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mockup__featherlite {
-  background: url("../images/featherlite.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.mockup img {
+  width: 100%;
 }
 
 .button-container {
