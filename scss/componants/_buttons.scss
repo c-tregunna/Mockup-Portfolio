@@ -7,18 +7,18 @@
 }
 
 button {
-    background: $orange;
-    color: $white;
+    color: $black;
     border: 1px solid $grey;
     padding: 10px 8px;
     border-radius: 10px;
     font-size: 1.25em;
     width: 140px;
     margin: 8px;
-    transition: color .4s ease-in-out,
-                border .4s ease-in-out;
-    &:hover {
-        color: $black;
+    transition: border .4s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
         border: 1px dashed $black;
+        outline: none;
     }
 }
