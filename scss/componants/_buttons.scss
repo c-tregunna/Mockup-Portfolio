@@ -14,11 +14,13 @@ button {
     font-size: 1.25em;
     width: 140px;
     margin: 8px;
-    transition: border .4s ease-in-out;
+    transition: border .4s ease-in-out,
+                background .4s ease-in-out;
     &:hover,
     &:focus,
     &:active {
         border: 1px dashed $black;
         outline: none;
+        background: $btn;
     }
 }
