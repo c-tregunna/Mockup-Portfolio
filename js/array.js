@@ -6,6 +6,7 @@ const mockups = [
         html: true,
         sass: false,
         javascript: false,
+        all: true,
     },
     {
         name: 'Firebase',
@@ -14,6 +15,7 @@ const mockups = [
         html: true,
         sass: false,
         javascript: false,
+        all: true,
     },
     {
         name: 'iOS',
@@ -22,6 +24,7 @@ const mockups = [
         html: true,
         sass: false,
         javascript: false,
+        all: true,
     },
     {
         name: 'Cloud Flare',
@@ -30,6 +33,7 @@ const mockups = [
         html: true,
         sass: true,
         javascript: true,
+        all: true,
     },
     {
         name: 'Social Network',
@@ -38,6 +42,7 @@ const mockups = [
         html: true,
         sass: true,
         javascript: false,
+        all: true,
     },
     {
         name: 'Paws Adoption Center',
@@ -46,6 +51,7 @@ const mockups = [
         html: true,
         sass: true,
         javascript: false,
+        all: true,
     },
     {
         name: 'ChatApp',
@@ -54,6 +60,7 @@ const mockups = [
         html: true,
         sass: true,
         javascript: true,
+        all: true,
     },
     {
         name: 'FeatherLITE',
@@ -62,6 +69,7 @@ const mockups = [
         html: true,
         sass: true,
         javascript: true,
+        all: true,
     },
     {
         name: 'Treehouse landing page',
@@ -70,5 +78,16 @@ const mockups = [
         html: false,
         sass: false,
         javascript: true,
+        all: true,
+    },
+    {
+        name: 'Random meal planner',
+        image:`<i class="fas fa-book-open"></i>`,
+        description: "***Coming Soon*** Create a randomized meal planner that you can use to generate a weekly meal plan for the week.",
+        html: false,
+        sass: false,
+        javascript: true,
+        all: true,
     },
 ];
+

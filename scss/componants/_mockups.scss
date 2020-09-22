@@ -7,11 +7,11 @@
     margin: auto;
     @include medq($break-m) {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
     @include medqL($break-l) {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
     }
 }
@@ -29,7 +29,7 @@
     &:hover {
         border: 2px solid $grey;
         box-shadow: 0px 2px 4px $grey;
-        transform: translateY(-2px);
+        transform: translateY(-1px);
     }
 }
 

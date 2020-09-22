@@ -421,6 +421,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  min-height: calc(100vh - 80px);
 }
 
 header {
@@ -437,6 +438,10 @@ footer {
   padding: 30px;
   text-align: center;
   height: 80px;
+}
+
+.hidden {
+  display: none;
 }
 
 .header-paragraph {
@@ -504,13 +509,13 @@ button:hover, button:focus, button:active {
 @media (min-width: 768px) {
   .mockup-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }
 @media (min-width: 1024px) {
   .mockup-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -526,7 +531,7 @@ button:hover, button:focus, button:active {
 .mockup:hover {
   border: 2px solid #C0C0C0;
   box-shadow: 0px 2px 4px #C0C0C0;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .mockup__desc {

@@ -10,6 +10,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    min-height: calc(100vh - 80px);
 }
 
 header {
@@ -24,4 +25,8 @@ footer {
     padding: 30px;
     text-align: center;
     height: 80px;
+}
+
+.hidden {
+    display: none;
 }

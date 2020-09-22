@@ -50,3 +50,58 @@ mockups.forEach((mockup, index) => {
 //---------------------
 // Select type of project buttons
 //---------------------
+
+const mockupCard = document.getElementsByClassName('mockup');
+const buttons = document.querySelector('.button-container');
+
+const allBtn = document.getElementById('all');
+const htmlBtn = document.getElementById('html');
+const sassBtn = document.getElementById('sass');
+const javascriptBtn = document.getElementById('javascript');
+
+
+
+buttons.addEventListener('click', e => {
+    if(e.target ===  htmlBtn) {
+        mockups.forEach((mockup, index) => {
+           if(mockup.html !== true) {
+            mockupCard[index].style.display = 'none';
+           } else {
+               mockupCard[index].style.display = '';
+           }})
+        } else if(e.target === sassBtn) {
+            mockups.forEach((mockup, index) => {
+                if(mockup.sass !== true) {
+                 mockupCard[index].style.display = 'none';
+                }else {
+                    mockupCard[index].style.display = '';
+                }
+            })
+        } else if(e.target === javascriptBtn) {
+            mockups.forEach((mockup, index) => {
+                if(mockup.javascript !== true) {
+                 mockupCard[index].style.display = 'none';
+                } else {
+                    mockupCard[index].style.display = '';
+                }
+            })
+        } else if (e.target === allBtn) {
+            mockups.forEach((mockup, index) => {
+                mockupCard[index].style.display = '';
+            })
+        }
+});
+
+
+
+
+
+// buttons.addEventListener('click', e => {
+//     if(e.target ===  htmlBtn) {
+//         for (let i = 0; i < mockupCard.length; i++) {
+//             if(mockupCard[i].dataset.type !== 'html') {
+//                 mockupCard[i].style.display = 'none';
+//             }
+//         }
+//     }
+// })
