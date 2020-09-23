@@ -74,7 +74,7 @@ const mockups = [
     {
         name: 'Treehouse landing page',
         image:`<i class="fas fa-code"></i>`,
-        description: "***Coming Soon*** The project is based on the beloved Treehouse landing page for the techdegree. The page contains three widgets that you will manipulate with JavaScript to complete the functionality to the page. ",
+        description: "The project is based on the beloved Treehouse landing page for the techdegree. The page contains three widgets that you will manipulate with JavaScript to complete the functionality to the page. ",
         html: false,
         sass: false,
         javascript: true,
@@ -83,7 +83,7 @@ const mockups = [
     {
         name: 'Random meal planner',
         image:`<i class="fas fa-book-open"></i>`,
-        description: "***Coming Soon*** Create a randomized meal planner that you can use to generate a weekly meal plan for the week.",
+        description: "Create a randomized meal planner that you can use to generate a weekly meal plan for the week.",
         html: false,
         sass: false,
         javascript: true,

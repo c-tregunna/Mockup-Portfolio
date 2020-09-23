@@ -16,10 +16,37 @@ mockups.forEach((mockup, index) => {
                         ${mockup.image}
                     </div>
                     <p class="mockup__desc">${mockup.description}</p>
+
+                    <ul class="mockup__type">
+
+                    </ul>
                     `;
 });
 
-//<img src="${mockup.image}" alt="${mockup.name}"></img>
+
+//Add in the li elements to show mock up type. This added it into the code above
+mockups.forEach((mockup, index) => {
+    const mockupType = document.querySelectorAll('.mockup__type');
+    if (mockup.html === true && mockup.sass === true && mockup.javascript === true ) {
+            mockupType[index].innerHTML += '<li>HTML/CSS</li> <li>Sass</li> <li>JavaScript</li>';
+        } else
+        if (mockup.html === true && mockup.sass === true) {
+            mockupType[index].innerHTML += '<li>HTML/CSS</li> <li>Sass</li>';
+        } else
+        if (mockup.html === true ) {
+            mockupType[index].innerHTML += '<li>HTML/CSS</li>';
+        } else
+        if (mockup.javascript === true ) {
+            mockupType[index].innerHTML += '<li>JavaScript</li>';
+        }
+});
+
+// <div class="mockup__type">
+//     <ul>
+//     <li>HTML</li>
+//     </ul>
+// </div>
+
 
 //Second method
 //***************
@@ -65,14 +92,14 @@ buttons.addEventListener('click', e => {
     if(e.target ===  htmlBtn) {
         mockups.forEach((mockup, index) => {
            if(mockup.html !== true) {
-            mockupCard[index].style.display = 'none';
+            mockupCard[index].style.display = 'none'; // hide all none html projects
            } else {
                mockupCard[index].style.display = '';
            }})
         } else if(e.target === sassBtn) {
             mockups.forEach((mockup, index) => {
                 if(mockup.sass !== true) {
-                 mockupCard[index].style.display = 'none';
+                 mockupCard[index].style.display = 'none'; // hide all none sass projects
                 }else {
                     mockupCard[index].style.display = '';
                 }
@@ -80,28 +107,14 @@ buttons.addEventListener('click', e => {
         } else if(e.target === javascriptBtn) {
             mockups.forEach((mockup, index) => {
                 if(mockup.javascript !== true) {
-                 mockupCard[index].style.display = 'none';
+                 mockupCard[index].style.display = 'none'; // hide all js html projects
                 } else {
                     mockupCard[index].style.display = '';
                 }
             })
         } else if (e.target === allBtn) {
             mockups.forEach((mockup, index) => {
-                mockupCard[index].style.display = '';
+                mockupCard[index].style.display = ''; // display all projects
             })
         }
 });
-
-
-
-
-
-// buttons.addEventListener('click', e => {
-//     if(e.target ===  htmlBtn) {
-//         for (let i = 0; i < mockupCard.length; i++) {
-//             if(mockupCard[i].dataset.type !== 'html') {
-//                 mockupCard[i].style.display = 'none';
-//             }
-//         }
-//     }
-// })
