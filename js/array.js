@@ -7,6 +7,7 @@ const mockups = [
         sass: false,
         javascript: false,
         all: true,
+        modalImage: 'images/momentum.png',
     },
     {
         name: 'Firebase',
@@ -16,6 +17,7 @@ const mockups = [
         sass: false,
         javascript: false,
         all: true,
+        modalImage: 'images/firebase.png',
     },
     {
         name: 'iOS',
@@ -25,6 +27,7 @@ const mockups = [
         sass: false,
         javascript: false,
         all: true,
+        modalImage: 'images/ios.png',
     },
     {
         name: 'Cloud Flare',
@@ -34,6 +37,7 @@ const mockups = [
         sass: true,
         javascript: true,
         all: true,
+        modalImage: 'images/cloudflare.png',
     },
     {
         name: 'Social Network',
@@ -43,6 +47,7 @@ const mockups = [
         sass: true,
         javascript: false,
         all: true,
+        modalImage: 'images/social.png',
     },
     {
         name: 'Paws Adoption Center',
@@ -52,6 +57,7 @@ const mockups = [
         sass: true,
         javascript: false,
         all: true,
+        modalImage: 'images/petadopt.png',
     },
     {
         name: 'ChatApp',
@@ -61,6 +67,7 @@ const mockups = [
         sass: true,
         javascript: true,
         all: true,
+        modalImage: 'images/chatapp.png',
     },
     {
         name: 'FeatherLITE',
@@ -70,6 +77,7 @@ const mockups = [
         sass: true,
         javascript: true,
         all: true,
+        modalImage: 'images/featherlite.png',
     },
     {
         name: 'Treehouse landing page',

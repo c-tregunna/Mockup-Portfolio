@@ -118,3 +118,27 @@ buttons.addEventListener('click', e => {
             })
         }
 });
+
+
+const mockupContainer = document.querySelector('.mockup-container');
+const modal = document.querySelectorAll('.modal__content');
+const modalOverlay = document.querySelector('.modal');
+
+mockupContainer.addEventListener('click', e => {
+    modalOverlay.classList.remove('hidden');
+    mockups.forEach((mockup, index) => {
+        modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
+})
+});
+
+//This just shows the first image
+
+// mockups.forEach((mockup, index) => {
+//     modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
+// })
+
+const closeBtn = document.querySelector('.fa-times-circle');
+closeBtn.addEventListener('click', e => {
+    modalOverlay.classList.add('hidden');
+});
+

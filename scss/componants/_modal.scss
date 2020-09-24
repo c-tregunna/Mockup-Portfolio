@@ -1,0 +1,19 @@
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.modal__content {
+    @include flex($dir: column, $align: center);
+    width: 50%;
+    margin: auto;
+    height: 90%;
+    background: darken($white, 10%);
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    border-radius: 8px;
+}
