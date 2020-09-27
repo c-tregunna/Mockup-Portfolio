@@ -7,7 +7,7 @@
 
 const project = document.querySelectorAll('.mockup');
 
-console.log(mockups);
+//console.log(mockups);
 
 mockups.forEach((mockup, index) => {
     project[index].innerHTML += `
@@ -40,12 +40,6 @@ mockups.forEach((mockup, index) => {
             mockupType[index].innerHTML += '<li>JavaScript</li>';
         }
 });
-
-// <div class="mockup__type">
-//     <ul>
-//     <li>HTML</li>
-//     </ul>
-// </div>
 
 
 //Second method
@@ -119,17 +113,29 @@ buttons.addEventListener('click', e => {
         }
 });
 
-
+const mock = document.querySelectorAll('.mockup');
 const mockupContainer = document.querySelector('.mockup-container');
-const modal = document.querySelectorAll('.modal__content');
 const modalOverlay = document.querySelector('.modal');
-
 mockupContainer.addEventListener('click', e => {
-    modalOverlay.classList.remove('hidden');
-    mockups.forEach((mockup, index) => {
-        modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
-})
+   mock.forEach((mock, index) => {
+      if (e.target === mock) {
+        console.log(mock[index]);
+        modalOverlay.classList.remove('hidden');
+     }
+  })
+
 });
+
+//const mockupContainer = document.querySelector('.mockup-container');
+// const modal = document.querySelectorAll('.modal__content');
+// const modalOverlay = document.querySelector('.modal');
+
+// mockupContainer.addEventListener('click', e => {
+//     modalOverlay.classList.remove('hidden');
+//     mockups.forEach((mockup, index) => {
+//         modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
+// })
+// });
 
 //This just shows the first image
 
