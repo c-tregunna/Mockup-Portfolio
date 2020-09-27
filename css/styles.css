@@ -567,10 +567,10 @@ button:hover, button:focus, button:active {
   position: absolute;
   padding: 8px 40px;
   top: 10px;
-  left: -30px;
+  left: -39px;
   font-size: 0.75em;
   background: #B2B256;
-  transform: rotate(-32deg);
+  transform: rotate(-36deg);
   border: 1px solid #000;
 }
 .mockup:hover {
