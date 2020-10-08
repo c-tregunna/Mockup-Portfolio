@@ -113,29 +113,32 @@ buttons.addEventListener('click', e => {
         }
 });
 
-const mock = document.querySelectorAll('.mockup');
-const mockupContainer = document.querySelector('.mockup-container');
-const modalOverlay = document.querySelector('.modal');
-mockupContainer.addEventListener('click', e => {
-   mock.forEach((mock, index) => {
-      if (e.target === mock) {
-        console.log(mock[index]);
-        modalOverlay.classList.remove('hidden');
-     }
-  })
-
-});
-
-//const mockupContainer = document.querySelector('.mockup-container');
-// const modal = document.querySelectorAll('.modal__content');
+// const mock = document.querySelectorAll('.mockup');
+// const mockupContainer = document.querySelector('.mockup-container');
 // const modalOverlay = document.querySelector('.modal');
-
 // mockupContainer.addEventListener('click', e => {
+//    mockups.forEach((mock, index) => {
 //     modalOverlay.classList.remove('hidden');
-//     mockups.forEach((mockup, index) => {
-//         modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
-// })
+//       if (e.target === mock) {
+//         modalOverlay.classList.remove('hidden');
+//         console.log(mock[index]);
+//      }
+//   })
+
 // });
+
+const mockupContainer = document.querySelector('.mockup-container');
+const modal = document.querySelectorAll('.modal__content');
+const modalOverlay = document.querySelector('.modal');
+const mock = document.querySelectorAll('.mockup');
+
+mockupContainer.addEventListener('click', e => {
+    modalOverlay.classList.remove('hidden');
+    mockups.forEach((mock, index) => {
+        console.log(mock[index]);
+        modal[index].innerHTML += `<img src="${mock.modalImage}" alt="${mock.name}">`;
+    })
+});
 
 //This just shows the first image
 

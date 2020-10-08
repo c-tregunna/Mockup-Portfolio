@@ -444,9 +444,19 @@ footer {
   display: none;
 }
 
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
 .header-paragraph {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .img-contain {
@@ -545,7 +555,7 @@ button:hover, button:focus, button:active {
 }
 .mockup__desc {
   margin: 10px;
-  height: 40%;
+  height: 50%;
 }
 .mockup__type {
   width: 100%;
