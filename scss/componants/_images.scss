@@ -22,10 +22,11 @@ i {
     text-shadow: none;
     align-self: flex-end;
     cursor: pointer;
+    z-index: 100000;
 }
 
 .modal__content img {
-    width: 50%;
+    height: 50%;
 }
 
 // @each $image, $background in $bg-images {

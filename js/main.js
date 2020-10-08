@@ -42,30 +42,6 @@ mockups.forEach((mockup, index) => {
 });
 
 
-//Second method
-//***************
-
-// const project = document.querySelector('.mockup-container');
-
-// console.log(mockups);
-
-// mockups.forEach(mockup => {
-//     const indivMockup = document.createElement('DIV');
-//     const mockupHeader = document.createElement('H2');
-//     const imgContainer = document.createElement('DIV');
-//     const mockupDesc = document.createElement('P');
-//     indivMockup.classList.add('mockup');
-//     imgContainer.classList.add('img-contain');
-//     mockupHeader.textContent = `${mockup.name}`;
-//     imgContainer.innerHTML = `<img src="${mockup.image}" alt="${mockup.name}"></img>`;
-//     mockupDesc.textContent = `${mockup.description}`;
-//     indivMockup.appendChild(mockupHeader);
-//     indivMockup.appendChild(imgContainer);
-//     indivMockup.appendChild(mockupDesc);
-//     project.appendChild(indivMockup);
-//     console.log(mockupHeader);
-//     console.log(indivMockup);
-// });
 
 
 //---------------------
@@ -89,7 +65,7 @@ buttons.addEventListener('click', e => {
             mockupCard[index].style.display = 'none'; // hide all none html projects
            } else {
                mockupCard[index].style.display = '';
-           }})
+           }});
         } else if(e.target === sassBtn) {
             mockups.forEach((mockup, index) => {
                 if(mockup.sass !== true) {
@@ -97,7 +73,7 @@ buttons.addEventListener('click', e => {
                 }else {
                     mockupCard[index].style.display = '';
                 }
-            })
+            });
         } else if(e.target === javascriptBtn) {
             mockups.forEach((mockup, index) => {
                 if(mockup.javascript !== true) {
@@ -105,49 +81,31 @@ buttons.addEventListener('click', e => {
                 } else {
                     mockupCard[index].style.display = '';
                 }
-            })
+            });
         } else if (e.target === allBtn) {
             mockups.forEach((mockup, index) => {
                 mockupCard[index].style.display = ''; // display all projects
-            })
+            });
         }
 });
 
-// const mock = document.querySelectorAll('.mockup');
-// const mockupContainer = document.querySelector('.mockup-container');
-// const modalOverlay = document.querySelector('.modal');
-// mockupContainer.addEventListener('click', e => {
-//    mockups.forEach((mock, index) => {
-//     modalOverlay.classList.remove('hidden');
-//       if (e.target === mock) {
-//         modalOverlay.classList.remove('hidden');
-//         console.log(mock[index]);
-//      }
-//   })
 
-// });
-
-const mockupContainer = document.querySelector('.mockup-container');
-const modal = document.querySelectorAll('.modal__content');
+//const mockupContainer = document.querySelector('.mockup-container');
+const modal = document.querySelector('.modal__content');
 const modalOverlay = document.querySelector('.modal');
 const mock = document.querySelectorAll('.mockup');
 
-mockupContainer.addEventListener('click', e => {
+mock.forEach((mockup, index) => {
+  mockup.addEventListener('click', () => {
     modalOverlay.classList.remove('hidden');
-    mockups.forEach((mock, index) => {
-        console.log(mock[index]);
-        modal[index].innerHTML += `<img src="${mock.modalImage}" alt="${mock.name}">`;
-    })
+    modal.innerHTML += `<img src="${mockups[index].modalImage}" alt="${mock[index].name}">
+                        <h3>${mockups[index].name}</h3>`;
+  });
 });
 
-//This just shows the first image
 
-// mockups.forEach((mockup, index) => {
-//     modal[index].innerHTML += `<img src="${mockup.modalImage}" alt="${mockup.name}">`;
-// })
 
 const closeBtn = document.querySelector('.fa-times-circle');
-closeBtn.addEventListener('click', e => {
+closeBtn.addEventListener('click', (e) => {
     modalOverlay.classList.add('hidden');
 });
-
