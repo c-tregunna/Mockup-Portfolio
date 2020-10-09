@@ -98,16 +98,16 @@ const mock = document.querySelectorAll('.mockup');
 mock.forEach((mockup, index) => {
   mockup.addEventListener('click', () => {
     modalOverlay.classList.remove('hidden');
+    let modalContainer = document.createElement('DIV');
     let projectImg = document.createElement('DIV');
+    let projectHeading = document.createElement('H3');
+    modalContainer.classList.add('modal__content-container');
     projectImg.classList.add('modal__content-img-container');
     projectImg.innerHTML = `<img src="${mockups[index].modalImage}" alt="${mockups[index].name}">`;
-    modal.appendChild(projectImg);
-
-
-
-
-
-
+    projectHeading.innerHTML = `${mockups[index].name}`;
+    modalContainer.appendChild(projectImg);
+    modalContainer.appendChild(projectHeading);
+    modal.appendChild(modalContainer);
 
     // modal.innerHTML += `
     //                     <img src="${mockups[index].modalImage}" alt="${mock[index].name}">
@@ -119,6 +119,6 @@ mock.forEach((mockup, index) => {
 const closeButton = document.querySelector('.fa-times-circle');
 closeButton.addEventListener('click', () => {
     modalOverlay.classList.add('hidden');
-    let projectImage = document.querySelector('.modal__content-img-container');
+    let projectImage = document.querySelector('.modal__content-container');
     projectImage.remove();
 });
