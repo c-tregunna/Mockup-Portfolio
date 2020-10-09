@@ -8,6 +8,7 @@ const mockups = [
         javascript: false,
         all: true,
         modalImage: 'images/momentum.png',
+        codeUrl: 'https://github.com/c-tregunna/Slack-HTML-challenge',
     },
     {
         name: 'Firebase',
@@ -18,6 +19,7 @@ const mockups = [
         javascript: false,
         all: true,
         modalImage: 'images/firebase.png',
+        codeUrl: 'https://github.com/c-tregunna/Slack-Firebase-Challenge',
     },
     {
         name: 'iOS',
@@ -28,6 +30,7 @@ const mockups = [
         javascript: false,
         all: true,
         modalImage: 'images/ios.png',
+        codeUrl: 'https://github.com/c-tregunna/iOS-Slack-Challenge',
     },
     {
         name: 'Cloud Flare',
@@ -38,6 +41,7 @@ const mockups = [
         javascript: true,
         all: true,
         modalImage: 'images/cloudflare.png',
+        codeUrl: 'https://github.com/c-tregunna/CloudFlare-Challenge',
     },
     {
         name: 'Social Network',
@@ -48,6 +52,7 @@ const mockups = [
         javascript: false,
         all: true,
         modalImage: 'images/social.png',
+        codeUrl: 'https://github.com/c-tregunna/Social-Challenge',
     },
     {
         name: 'Paws Adoption Center',
@@ -58,6 +63,7 @@ const mockups = [
         javascript: false,
         all: true,
         modalImage: 'images/petadopt.png',
+        codeUrl: 'https://github.com/c-tregunna/Pet_adoption_Challenge',
     },
     {
         name: 'ChatApp',
@@ -68,6 +74,7 @@ const mockups = [
         javascript: true,
         all: true,
         modalImage: 'images/chatapp.png',
+        codeUrl: 'https://github.com/c-tregunna/ChatApp-Challenge',
     },
     {
         name: 'FeatherLITE',
@@ -78,6 +85,7 @@ const mockups = [
         javascript: true,
         all: true,
         modalImage: 'images/featherlite.png',
+        codeUrl: 'https://github.com/c-tregunna/FeatherLITE-Challenge',
     },
     {
         name: 'Treehouse landing page',

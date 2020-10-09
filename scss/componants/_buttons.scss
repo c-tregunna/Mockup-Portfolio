@@ -6,7 +6,8 @@
     }
 }
 
-button {
+button,
+.github-link {
     color: $black;
     border: 1px solid $grey;
     padding: 10px 8px;
@@ -23,4 +24,13 @@ button {
         outline: none;
         background: $btn;
     }
+}
+
+.modal-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.project-links {
+    @include flex($dir: row, $just: space-around);
 }

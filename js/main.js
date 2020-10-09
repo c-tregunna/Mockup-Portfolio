@@ -100,13 +100,23 @@ mock.forEach((mockup, index) => {
     modalOverlay.classList.remove('hidden');
     let modalContainer = document.createElement('DIV');
     let projectImg = document.createElement('DIV');
+    let projectInfo = document.createElement('DIV');
     let projectHeading = document.createElement('H3');
     modalContainer.classList.add('modal__content-container');
+    projectInfo.classList.add('modal__content-information');
     projectImg.classList.add('modal__content-img-container');
     projectImg.innerHTML = `<img src="${mockups[index].modalImage}" alt="${mockups[index].name}">`;
     projectHeading.innerHTML = `${mockups[index].name}`;
     modalContainer.appendChild(projectImg);
-    modalContainer.appendChild(projectHeading);
+    projectInfo.innerHTML += `<h3>${mockups[index].name}</h3>
+                                <p>This is the mockup image I was given to work from.</p>
+                                <p>Click the link below to see the code of the live site(coming soon).</p>
+                                <div class="project-links">
+                                    <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Code</a>
+                                    <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Live</a>
+                                </div>`
+    // projectInfo.appendChild(projectHeading);
+    modalContainer.appendChild(projectInfo);
     modal.appendChild(modalContainer);
 
     // modal.innerHTML += `
@@ -122,3 +132,23 @@ closeButton.addEventListener('click', () => {
     let projectImage = document.querySelector('.modal__content-container');
     projectImage.remove();
 });
+
+
+
+
+// let scrollLeft = document.querySelector('.fa-chevron-left');
+// let scrollRight = document.querySelector('.fa-chevron-right');
+
+// // scroll forward through modals
+// scrollRight.addEventListener('click', () => {
+// 	if (mock < mockups.length - 1) {
+// 		mock++;
+// 	}
+// });
+
+// //scroll back through modals
+// scrollLeft.addEventListener('click', () => {
+// 	if (mock > 0) {
+// 		mock--;
+// 	}
+// });

@@ -25,6 +25,18 @@ i {
     z-index: 100000;
 }
 
+.fa-chevron-right,
+.fa-chevron-left {
+    position: absolute;
+    z-index: 1000;
+    top: 40vh;
+    font-size: 4em;
+}
+
+.fa-chevron-right {
+    right: 0px;
+}
+
 
 .modal__content img {
     height: 100%;
