@@ -487,6 +487,13 @@ i {
 
 .modal__content img {
   height: 50%;
+  border: 2px solid #000;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.modal__content-img-container {
+  height: 50%;
 }
 
 .button-container {

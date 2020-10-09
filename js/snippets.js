@@ -61,3 +61,10 @@
 //     console.log(mockupHeader);
 //     console.log(indivMockup);
 // });
+
+// let projectImg = document.createElement('DIV');
+// projectImg.classList.add('modal__content-img-container');
+// projectImg.innerHTML = `<img src="${mockup[index].image}" alt="${mockup[index].name}">`
+// //projectImg.setAttribute('src', '${mock[index].modalImage}');
+// //projectImg.setAttribute('alt', '${mock[index].name}');
+// modal.appendChild(projectImg);

@@ -98,14 +98,27 @@ const mock = document.querySelectorAll('.mockup');
 mock.forEach((mockup, index) => {
   mockup.addEventListener('click', () => {
     modalOverlay.classList.remove('hidden');
-    modal.innerHTML += `<img src="${mockups[index].modalImage}" alt="${mock[index].name}">
-                        <h3>${mockups[index].name}</h3>`;
+    let projectImg = document.createElement('DIV');
+    projectImg.classList.add('modal__content-img-container');
+    projectImg.innerHTML = `<img src="${mockups[index].image}" alt="${mockups[index].name}">`
+    //projectImg.setAttribute('src', '${mock[index].modalImage}');
+    //projectImg.setAttribute('alt', '${mock[index].name}');
+    modal.appendChild(projectImg);
+
+
+
+
+
+
+
+    // modal.innerHTML += `
+    //                     <img src="${mockups[index].modalImage}" alt="${mock[index].name}">
+    //                     <h3>${mockups[index].name}</h3>`;
   });
 });
 
 
-
-const closeBtn = document.querySelector('.fa-times-circle');
-closeBtn.addEventListener('click', (e) => {
+const closeButton = document.querySelector('.fa-times-circle');
+closeButton.addEventListener('click', () => {
     modalOverlay.classList.add('hidden');
 });
