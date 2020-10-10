@@ -68,3 +68,24 @@
 // //projectImg.setAttribute('src', '${mock[index].modalImage}');
 // //projectImg.setAttribute('alt', '${mock[index].name}');
 // modal.appendChild(projectImg);
+
+// This worked but for some reason the close button would not work with it
+
+// modal.innerHTML += `
+//                     <img src="${mockups[index].modalImage}" alt="${mock[index].name}">
+//                     <h3>${mockups[index].name}</h3>`;
+
+
+// function nextElement() {
+//     if (index <= mockups.length) {
+//      index ++;
+//     }
+//     modalHTML();
+//  }
+
+// function prevElement() {
+//     if (index > 0) {
+//       index --;
+//     }
+//     modalHTML();
+//   }

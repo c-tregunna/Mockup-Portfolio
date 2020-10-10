@@ -89,11 +89,12 @@ buttons.addEventListener('click', e => {
         }
 });
 
-
-//const mockupContainer = document.querySelector('.mockup-container');
 const modal = document.querySelector('.modal__content');
 const modalOverlay = document.querySelector('.modal');
 const mock = document.querySelectorAll('.mockup');
+
+
+function modalHTML () {
 
 mock.forEach((mockup, index) => {
   mockup.addEventListener('click', () => {
@@ -110,20 +111,21 @@ mock.forEach((mockup, index) => {
     modalContainer.appendChild(projectImg);
     projectInfo.innerHTML += `<h3>${mockups[index].name}</h3>
                                 <p>This is the mockup image I was given to work from.</p>
-                                <p>Click the link below to see the code of the live site(coming soon).</p>
+                                <p>Click the link below to see the code or the live site(coming soon).</p>
                                 <div class="project-links">
                                     <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Code</a>
                                     <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Live</a>
                                 </div>`
-    // projectInfo.appendChild(projectHeading);
     modalContainer.appendChild(projectInfo);
     modal.appendChild(modalContainer);
 
-    // modal.innerHTML += `
-    //                     <img src="${mockups[index].modalImage}" alt="${mock[index].name}">
-    //                     <h3>${mockups[index].name}</h3>`;
   });
 });
+}
+
+modalHTML();
+
+
 
 
 const closeButton = document.querySelector('.fa-times-circle');
@@ -133,11 +135,27 @@ closeButton.addEventListener('click', () => {
     projectImage.remove();
 });
 
+let index = 0;
 
+const scrollLeft = document.querySelector('.fa-chevron-left');
+const scrollRight = document.querySelector('.fa-chevron-right');
 
+scrollRight.addEventListener('click', e => {
+    if (index <= mockups.length) {
+        index ++;
+       }
+       modalHTML(index);
+    //    modalHTML();
+});
 
-// let scrollLeft = document.querySelector('.fa-chevron-left');
-// let scrollRight = document.querySelector('.fa-chevron-right');
+scrollLeft.addEventListener('click', e => {
+    if (index > 0) {
+        index --;
+      }
+      modalHTML(index);
+    //   modalHTML();
+});
+
 
 // // scroll forward through modals
 // scrollRight.addEventListener('click', () => {
