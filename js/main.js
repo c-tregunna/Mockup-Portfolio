@@ -104,6 +104,7 @@ mock.forEach((mockup, index) => {
     let projectInfo = document.createElement('DIV');
     let projectHeading = document.createElement('H3');
     modalContainer.classList.add('modal__content-container');
+    modalContainer.setAttribute('data-index', handleModalScroll);
     projectInfo.classList.add('modal__content-information');
     projectImg.classList.add('modal__content-img-container');
     projectImg.innerHTML = `<img src="${mockups[index].modalImage}" alt="${mockups[index].name}">`;
@@ -135,26 +136,49 @@ closeButton.addEventListener('click', () => {
     projectImage.remove();
 });
 
-let index = 0;
-
 const scrollLeft = document.querySelector('.fa-chevron-left');
 const scrollRight = document.querySelector('.fa-chevron-right');
 
-scrollRight.addEventListener('click', e => {
-    if (index <= mockups.length) {
-        index ++;
-       }
-       modalHTML(index);
-    //    modalHTML();
-});
+handleModalScroll = (dir, index) => {
+    if (dir === 'prev') {
+        index -= 1;
+            index === 0 && modalHTML(index);
+    } else {
+        index += 1;
+        if (index === project.length) {
+            index = 0;
+            modalHTML(index);
+        } else {
+            modalHTML(index);
+        }
+    }
+}
+scrollPrev = index => {
+    handleModalScroll('right', index);
+}
+scrollNext = index => {
+    handleModalScroll('prev', index);
+}
 
-scrollLeft.addEventListener('click', e => {
-    if (index > 0) {
-        index --;
-      }
-      modalHTML(index);
-    //   modalHTML();
-});
+
+// let index = 0;
+
+
+// scrollRight.addEventListener('click', e => {
+//     if (index <= mockups.length) {
+//         index ++;
+//        }
+//        modalHTML(index);
+//     //    modalHTML();
+// });
+
+// scrollLeft.addEventListener('click', e => {
+//     if (index > 0) {
+//         index --;
+//       }
+//       modalHTML(index);
+//     //   modalHTML();
+// });
 
 
 // // scroll forward through modals
