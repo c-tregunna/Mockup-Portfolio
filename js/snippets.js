@@ -89,3 +89,69 @@
 //     }
 //     modalHTML();
 //   }
+
+
+
+
+
+
+
+
+/////////// Modal navigation \\\\\\\\\\\
+
+
+// handleModalScroll = (dir, index) => {
+//     if (dir === 'prev') {
+//         index -= 1;
+//             index === 0 && modalHTML(index);
+//     } else {
+//         index += 1;
+//         if (index === mockups.length) {
+//             index = 0;
+//             modalHTML(index);
+//         } else {
+//             modalHTML(index);
+//         }
+//     }
+// }
+// scrollPrev = index => {
+//     handleModalScroll('right', index);
+// }
+// scrollNext = index => {
+//     handleModalScroll('prev', index);
+// }
+
+
+// let index = 0;
+
+
+// scrollRight.addEventListener('click', e => {
+//     if (index <= mockups.length) {
+//         index ++;
+//        }
+//        modalHTML(index);
+//     //    modalHTML();
+// });
+
+// scrollLeft.addEventListener('click', e => {
+//     if (index > 0) {
+//         index --;
+//       }
+//       modalHTML(index);
+//     //   modalHTML();
+// });
+
+
+// // scroll forward through modals
+// scrollRight.addEventListener('click', () => {
+// 	if (mock < mockups.length - 1) {
+// 		mock++;
+// 	}
+// });
+
+// //scroll back through modals
+// scrollLeft.addEventListener('click', () => {
+// 	if (mock > 0) {
+// 		mock--;
+// 	}
+// });
