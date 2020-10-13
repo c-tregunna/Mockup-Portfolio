@@ -155,3 +155,26 @@
 // 		mock--;
 // 	}
 // });
+
+
+
+
+
+// function nextElement(callback) {
+//     if (index <= mockups.length) {
+//      index = (index + 1) % (mockups.length);
+//     } else {
+//       index = 0;
+//     }
+//     modalHTML();
+//  }
+
+// function prevElement(callback) {
+//     if (index > 0) {
+//       index = (index - 1) % (mockups.length);
+//     } else {
+//       index = mockups.length - 1;
+//     }
+//     modalHTML();
+//   }
+

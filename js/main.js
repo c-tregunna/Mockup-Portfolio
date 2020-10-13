@@ -6,14 +6,14 @@
 //***************
 
 const project = document.querySelectorAll('.mockup');
-const projectCard = document.querySelector('.mockup'); //setsttribute wont work with queryselectorall
-
+//const projectCard = document.querySelector('.mockup'); //setsttribute wont work with queryselectorall
 
 //console.log(mockups);
 
 mockups.forEach((mockup, index) => {
-    projectCard.setAttribute('data-index', `${index}`);
+    //projectCard.setAttribute('data-index', `${index}`); nope, doesnt work
     project[index].innerHTML += `
+                    <div class="card" data-index="${index}">
                      <h2>${mockup.name}</h2>
                     <div class="img-contain">
                         ${mockup.image}
@@ -23,6 +23,7 @@ mockups.forEach((mockup, index) => {
                     <ul class="mockup__type">
 
                     </ul>
+                    </div>
                     `;
 });
 
@@ -97,7 +98,7 @@ const modalOverlay = document.querySelector('.modal');
 const mock = document.querySelectorAll('.mockup');
 
 
-function modalHTML () {
+function modalHTML (callback) {
 
 mock.forEach((mockup, index) => {
   mockup.addEventListener('click', () => {
@@ -137,37 +138,34 @@ closeButton.addEventListener('click', () => {
 
 const scrollLeft = document.querySelector('.fa-chevron-left');
 const scrollRight = document.querySelector('.fa-chevron-right');
+const card = document.querySelectorAll('.card');
+const index = card.getAttribute('data-index');
+
+handleModalScroll = (dir, index) => {
+    if (dir === 'prev') {
+        index -= 1;
+            index === 0 && modalHTML(index);
+    } else {
+        index += 1;
+        if (index === mockups.length) {
+            index = 0;
+            modalHTML(index);
+        } else {
+            modalHTML(index);
+        }
+    }
+}
+
+scrollRight.addEventListener('click', () => {
+    scrollPrev = index => {
+        handleModalScroll('right', index);
+    }
+});
+
+scrollLeft.addEventListener('click', () => {
+    scrollNext = index => {
+        handleModalScroll('prev', index);
+    }
+});
 
 
-// let index = 0;
-
-// scrollRight.addEventListener('click', e => {
-//     if (index <= mockups.length) {
-//         index ++;
-//        }
-//        modalHTML(index);
-//     //    modalHTML();
-// });
-
-// scrollLeft.addEventListener('click', e => {
-//     if (index > 0) {
-//         index --;
-//       }
-//       modalHTML(index);
-//     //   modalHTML();
-// });
-
-
-// // scroll forward through modals
-// scrollRight.addEventListener('click', () => {
-// 	if (mock < mockups.length - 1) {
-// 		mock++;
-// 	}
-// });
-
-// //scroll back through modals
-// scrollLeft.addEventListener('click', () => {
-// 	if (mock > 0) {
-// 		mock--;
-// 	}
-// });
