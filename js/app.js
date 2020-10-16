@@ -149,7 +149,6 @@ const modalHTML = index => {
         let projectImage = document.querySelector('.modal__content-container');
         projectImage.remove();
     });
-
 };
 
 //--------------------END

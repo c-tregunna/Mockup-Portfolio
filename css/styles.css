@@ -461,12 +461,12 @@ h2 {
 
 .img-contain {
   width: 100%;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
 }
 
 .mockup img {
-  width: 40%;
+  width: 30%;
   box-shadow: 1px 1px 1px #000;
 }
 
@@ -592,7 +592,7 @@ button:hover, button:focus, button:active,
 }
 .mockup__desc {
   margin: 10px;
-  height: 50%;
+  height: 45%;
 }
 .mockup__type {
   width: 100%;
@@ -624,6 +624,10 @@ button:hover, button:focus, button:active,
   border: 2px solid #C0C0C0;
   box-shadow: 0px 2px 4px #C0C0C0;
   transform: translateY(-1px);
+}
+
+.card {
+  height: 100%;
 }
 
 .modal {
