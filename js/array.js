@@ -3,12 +3,14 @@ const mockups = [
         name: 'Momentum',
         image:`<i class="far fa-comment"></i>`,
         description: "You're working for a company as a front-end developer. Your boss tells you that your team is putting the finishing touches on a website they've been developing; Momentum. The design team has created a mockup for the beta testing landing page for this website and your boss needs you to code it out with just HTML and CSS!",
+        shortDesc: 'This was the first mockup challenge I undertook, with simple HTML and CSS and only minor changes for tablet and desktop viewports',
         html: true,
         sass: false,
         javascript: false,
         all: true,
         modalImage: 'images/momentum.png',
         codeUrl: 'https://github.com/c-tregunna/Slack-HTML-challenge',
+        liveSite: 'https://c-tregunna.github.io/Slack-HTML-challenge/',
     },
     {
         name: 'Firebase',
@@ -20,6 +22,7 @@ const mockups = [
         all: true,
         modalImage: 'images/firebase.png',
         codeUrl: 'https://github.com/c-tregunna/Slack-Firebase-Challenge',
+        liveSite: 'https://c-tregunna.github.io/Slack-Firebase-Challenge/',
     },
     {
         name: 'iOS',
@@ -31,6 +34,7 @@ const mockups = [
         all: true,
         modalImage: 'images/ios.png',
         codeUrl: 'https://github.com/c-tregunna/iOS-Slack-Challenge',
+        liveSite: 'https://c-tregunna.github.io/iOS-Slack-Challenge/',
     },
     {
         name: 'Cloud Flare',
@@ -42,6 +46,7 @@ const mockups = [
         all: true,
         modalImage: 'images/cloudflare.png',
         codeUrl: 'https://github.com/c-tregunna/CloudFlare-Challenge',
+        liveSite: 'https://c-tregunna.github.io/CloudFlare-Challenge/',
     },
     {
         name: 'Social Network',
@@ -53,6 +58,7 @@ const mockups = [
         all: true,
         modalImage: 'images/social.png',
         codeUrl: 'https://github.com/c-tregunna/Social-Challenge',
+        liveSite: 'https://c-tregunna.github.io/Social-Challenge/',
     },
     {
         name: 'Paws Adoption Center',
@@ -64,6 +70,7 @@ const mockups = [
         all: true,
         modalImage: 'images/petadopt.png',
         codeUrl: 'https://github.com/c-tregunna/Pet_adoption_Challenge',
+        liveSite: 'https://c-tregunna.github.io/Pet_adoption_Challenge/',
     },
     {
         name: 'ChatApp',
@@ -75,6 +82,7 @@ const mockups = [
         all: true,
         modalImage: 'images/chatapp.png',
         codeUrl: 'https://github.com/c-tregunna/ChatApp-Challenge',
+        liveSite: 'https://c-tregunna.github.io/ChatApp-Challenge/',
     },
     {
         name: 'FeatherLITE',
@@ -86,18 +94,21 @@ const mockups = [
         all: true,
         modalImage: 'images/featherlite.png',
         codeUrl: 'https://github.com/c-tregunna/FeatherLITE-Challenge',
+        liveSite: 'https://c-tregunna.github.io/FeatherLITE-Challenge/',
     },
     {
-        name: 'Treehouse landing page',
+        name: 'Treehouse Landing Page',
         image:`<i class="fas fa-code"></i>`,
         description: "The project is based on the beloved Treehouse landing page for the techdegree. The page contains three widgets that you will manipulate with JavaScript to complete the functionality to the page. ",
         html: false,
         sass: false,
         javascript: true,
         all: true,
+        codeUrl: 'https://github.com/c-tregunna/treehouse-widget',
+        liveSite: 'https://c-tregunna.github.io/treehouse-widget'
     },
     {
-        name: 'Random meal planner',
+        name: 'Random Meal Planner',
         image:`<i class="fas fa-book-open"></i>`,
         description: "Create a randomized meal planner that you can use to generate a weekly meal plan for the week.",
         html: false,

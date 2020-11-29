@@ -111,14 +111,15 @@ const modalHTML = index => {
       <div class="modal__content-container">
         <div class="modal__content-img-container">
           <img src="${mockups[index].modalImage}" alt="${mockups[index].name}">
+          <p>The mockup image I was given to work from.</p>
         </div>
         <div class="modal__content-information">
           <h3>${mockups[index].name}</h3>
-          <p>This is the mockup image I was given to work from.</p>
-          <p>Click the link below to see the code or the live site(coming soon).</p>
+          <p>${mockups[index].shortDesc}</p>
+          <p class="link-p">Click the link below to see the code or the live site.</p>
           <div class="project-links">
           <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Code</a>
-          <a href="${mockups[index].codeUrl}" target="_blank" class="github-link modal-link">Live</a>
+          <a href="${mockups[index].liveSite}" target="_blank" class="github-link modal-link">Live</a>
           </div>
         </div>
       </div>
