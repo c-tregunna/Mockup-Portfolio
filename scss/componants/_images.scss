@@ -40,8 +40,7 @@ i {
 .modal__content img {
   height: 90%;
   max-height: 400px;
-  border: 2px solid $black;
-  padding: 8px;
+  box-shadow: 0px 5px 6px -2px lighten($black, 50%);
   border-radius: 4px;
 }
 
