@@ -612,7 +612,7 @@ button:hover, button:focus, button:active,
   border: 1px solid #C0C0C0;
   border-radius: 4px;
 }
-.mockup:nth-child(9)::before, .mockup:nth-child(10)::before {
+.mockup:nth-child(10)::before {
   content: "Coming Soon";
   position: absolute;
   padding: 8px 40px;
