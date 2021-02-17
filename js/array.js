@@ -107,6 +107,7 @@ const mockups = [
         sass: false,
         javascript: true,
         all: true,
+        modalImage: 'images/treehouse.png',
         codeUrl: 'https://github.com/c-tregunna/treehouse-widget',
         liveSite: 'https://c-tregunna.github.io/treehouse-widget'
     },
